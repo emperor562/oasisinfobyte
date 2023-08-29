@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="css/t3.css">
+    <style>
+        body {
+          background-image: url('img/11.webp');
+          background-repeat: no-repeat;
+          background-attachment: fixed; 
+          background-size: 100% 100%;
+        }
+        </style>
+</head>
+<body>
+    <div class="back">
+        <div class="container">
+            <form>
+                <h1>Temperature converter</h1>
+                <br>
+                <label for="Celsius"><b>Celsius</b></label>
+                <input id="celsius" type="number" placeholder="Enter Temperature" name="Celsius">
+                <button type="button" onclick="convertFahrenheit()">Convert to Fahrenheit</button>
+                <br>
+
+                <label for="Fahrenheit"><b>Fahrenheit</b></label>
+                <input id="fahrenheit" type="number" placeholder="Enter Temperature" name="Fahrenheit">
+                <button type="button" onclick="convertCelsius()">Convert to Celsius</button>
+
+                <button type="button" onclick="resetForm()">Reset</button>
+            </form>
+        </div>
+        <script src="js/t3.js"></script>
+    </div>
+</body>
+
+</html>
